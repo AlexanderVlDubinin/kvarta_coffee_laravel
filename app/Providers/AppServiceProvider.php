@@ -2,6 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -19,6 +23,17 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Model::unguard(); // disables Mass Assignment protection for all models
+        Model::shouldBeStrict(); // enables strict mode for all models
+
+        // Setting up the limiter for the application form
+        RateLimiter::for('leads-signup', function (Request $request) {
+            return Limit::perMinute(3)->by($request->ip())->response(function (Request $request, array $headers) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Слишком много попыток! Пожалуйста, подождите минуту перед следующей отправкой.'
+                ], 429, $headers); // Code 429 Too Many Requests
+            });
+        });
     }
 }
