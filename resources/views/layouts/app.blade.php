@@ -11,7 +11,7 @@
         <meta name="description" content="Обжариваем кофе по четвергам, развозим по Минску в пятницу. Получите зерно на следующий день после ростера на пике вкуса!">
         <meta property="og:type" content="website">
         <meta property="og:title" content="КВАРТА — Мастерская кофе">
-        <meta property="og:description" content="Свежий обжар крошечными партиями по 5 кг. Упаковка и доставка прямо к вам домой или в офис.">
+        <meta property="og:description" content="Свежий обжар партиями по 5 кг. Упаковка и доставка прямо к вам домой или в офис.">
         <meta property="og:image" content="{{ url(asset('images/kvarta_coffee_main_2.jpg')) }}">
         <meta property="og:url" content="{{ url()->current() }}">
 
