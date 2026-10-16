@@ -25,7 +25,7 @@ class LeadController extends Controller
 
             return response()->json([
                 'success' => true,
-                'message' => 'Спасибо! Заявка успешно принята. Мы свяжемся с вами в течение 15 минут.',
+                'message' => 'Спасибо! Заявка успешно принята. Менеджер свяжется с вами.',
                 'data' => $lead
             ], 201);
 
