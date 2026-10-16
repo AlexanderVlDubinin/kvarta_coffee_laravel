@@ -1,6 +1,6 @@
 <section class="relative min-h-screen flex items-center justify-center bg-[#120d0a] text-stone-100 overflow-hidden">
     <div class="absolute inset-0 z-0">
-        <img src="{{ asset('images/kvarta_coffee_main_3.jpg') }}"
+        <img src="{{ asset('images/kvarta_coffee_main_1.jpg') }}"
              alt="Свежеобжаренные кофейные зерна Кварта"
              class="w-full h-full object-cover object-center opacity-50 select-none pointer-events-none">
         <div class="absolute inset-0 bg-linear-to-t from-[#120d0a] via-[#120d0a]/40 to-[#120d0a]/30"></div>
