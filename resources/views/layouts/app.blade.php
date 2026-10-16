@@ -12,7 +12,7 @@
         <meta property="og:type" content="website">
         <meta property="og:title" content="КВАРТА — Мастерская кофе">
         <meta property="og:description" content="Свежий обжар крошечными партиями по 5 кг. Упаковка и доставка прямо к вам домой или в офис.">
-        <meta property="og:image" content="https://unsplash.com">
+        <meta property="og:image" content="{{ url(asset('images/kvarta_coffee_main_2.jpg')) }}">
         <meta property="og:url" content="{{ url()->current() }}">
 
         <!-- Подключение современного шрифта Geist или Inter (через Google Fonts) -->
