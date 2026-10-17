@@ -206,6 +206,24 @@ function setupDynamicErrorClearing() {
 
 // Вызываем эту функцию один раз при загрузке страницы, чтобы активировать логику
 document.addEventListener('DOMContentLoaded', function() {
+    // сохранение UTM-меток при загрузке страницы
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmTags = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'];
+
+    // Фиксируем UTM-метки в localStorage, если они есть в URL
+    utmTags.forEach(tag => {
+        if (urlParams.has(tag)) {
+            localStorage.setItem(tag, urlParams.get(tag));
+        }
+    });
+
+    // Изолируем внешний Referrer (откуда пришел клиент)
+    // Сохраняем только внешний адрес, чтобы не перезаписать его внутренними переходами по сайту
+    if (document.referrer && !document.referrer.includes(window.location.hostname)) {
+        localStorage.setItem('entry_referrer', document.referrer);
+    }
+
+    // сброс ошибок
     setupDynamicErrorClearing();
 });
 
@@ -256,11 +274,11 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
         comment: document.getElementById('comment').value,
         mid_name: document.getElementById('mid_name').value,
         // Извлекаем UTM-метки из строки браузера (дополнительный плюс по ТЗ)
-        utm_source: new URLSearchParams(window.location.search).get('utm_source'),
-        utm_medium: new URLSearchParams(window.location.search).get('utm_medium'),
-        utm_campaign: new URLSearchParams(window.location.search).get('utm_campaign'),
-        utm_content: new URLSearchParams(window.location.search).get('utm_content'),
-        referrer: document.referrer
+        utm_source: localStorage.getItem('utm_source'),
+        utm_medium: localStorage.getItem('utm_medium'),
+        utm_campaign: localStorage.getItem('utm_campaign'),
+        utm_content: localStorage.getItem('utm_content'),
+        referrer: localStorage.getItem('entry_referrer')
     };
 
     // Блокируем кнопку (защита от Double Click по ТЗ)

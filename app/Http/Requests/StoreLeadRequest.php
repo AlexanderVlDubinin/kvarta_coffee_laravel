@@ -46,7 +46,7 @@ class StoreLeadRequest extends FormRequest
             'utm_medium'   => ['nullable', 'string', 'max:255'],
             'utm_campaign' => ['nullable', 'string', 'max:255'],
             'utm_content'  => ['nullable', 'string', 'max:255'],
-            'referrer'     => ['nullable', 'string', 'max:2000'],
+            'referrer'     => ['nullable', 'string', 'max:65535'], // Реферрер может быть длинным URL
         ];
     }
 
