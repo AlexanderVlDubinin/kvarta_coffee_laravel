@@ -47,6 +47,7 @@ class LeadService
             }
 
             $data['name'] = strip_tags($data['name']);
+            $data['product'] = strip_tags($data['product']);
             $data['comment'] = strip_tags($data['comment']);
 
             // 6. If everything is clear, save the application
