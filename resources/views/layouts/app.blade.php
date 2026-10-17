@@ -20,6 +20,9 @@
         <link rel="preconnect" href="https://gstatic.com" crossorigin>
         <link href="https://googleapis.com/css2?family=Geist:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 
+        <!-- Подключение favicon в формате SVG из папки public -->
+        <link rel="icon" type="image/svg+xml" href="{{ asset('favicon.svg') }}">
+
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <style>
