@@ -1,6 +1,5 @@
-<section id="subscription" class="py-20 sm:py-28 bg-[#1c1410] text-stone-200 border-t border-[#2e221c] relative overflow-hidden">
+<section id="subscription" class="pt-36 pb-8 sm:pt-52 sm:pb-8 bg-[#211814] text-stone-200 relative overflow-hidden">
     <div class="absolute -top-40 -right-40 w-80 h-80 bg-[#df974f]/5 rounded-full blur-3xl pointer-events-none"></div>
-    <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="container mx-auto px-4 max-w-5xl relative z-10">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">

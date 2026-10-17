@@ -1,14 +1,16 @@
-<section id="story" class="py-20 sm:py-28 bg-[#211814] text-stone-200 border-t border-[#2e221c]">
+<section id="story" class="pt-20 pb-8 sm:pt-28 sm:pb-8 bg-[#211814] text-stone-200">
     <div class="container mx-auto px-4 max-w-5xl">
+        <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
+            <span class="text-xl! sm:text-sm font-bold tracking-widest text-[#df974f] uppercase">Основатели мастерской</span>
+            <h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white balance">
+                <span>Привет!</span>
+                <br>
+                <span>Мы Аня и Дмитрий.</span>
+            </h2>
+        </div>
+
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mb-20 sm:mb-28">
             <div class="lg:col-span-5 space-y-6">
-                <div class="space-y-2">
-                    <span class="text-xl! sm:text-sm font-bold tracking-widest text-[#df974f] uppercase">Основатели мастерской</span>
-                    <h2 class="text-3xl sm:text-4xl font-black font-display tracking-tight text-white balance">
-                        Привет!<br>Мы Аня и Дмитрий.
-                    </h2>
-                </div>
-
                 <div class="relative aspect-4/3 sm:aspect-video lg:aspect-square rounded-2xl overflow-hidden bg-[#120d0a] border border-[#3d2c24] shadow-xl">
                     <img src="{{ asset('images/founders.jpg') }}"
                          alt="Основатели мастерской Кварта"
@@ -17,7 +19,7 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-7 text-base sm:text-lg text-stone-300 space-y-6 leading-relaxed font-light pt-2">
+            <div class="lg:col-span-7 text-base sm:text-lg text-stone-300 space-y-6 leading-relaxed font-light">
                 <p class="text-justify">
                     Раньше мы работали бариста и каждый день варили сотни чашек. Мы видели, как люди ищут <strong class="font-medium text-[#df974f]">«тот самый вкус»</strong>, но иной раз разочаровываются. В 2019 году мы открыли свою мастерскую <span class="text-white font-medium">«Кварта»</span>, чтобы исправить это.
                 </p>
@@ -30,7 +32,7 @@
             </div>
         </div>
 
-        <div class="bg-[#120d0a]/60 border border-[#3d2c24]/50 p-8 sm:p-12 rounded-3xl backdrop-blur-sm shadow-2xl">
+        <div class="bg-[#120d0a]/60 border border-[#3d2c24] p-8 sm:p-12 rounded-3xl backdrop-blur-sm">
             <div class="text-center max-w-2xl mx-auto mb-12 space-y-2">
                 <span class="text-xl! sm:text-sm font-bold tracking-widest text-[#df974f] uppercase">Почему свежесть важна</span>
                 <h3 class="text-2xl sm:text-3xl font-black font-display tracking-tight text-white">

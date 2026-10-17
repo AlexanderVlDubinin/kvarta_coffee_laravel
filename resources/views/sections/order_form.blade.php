@@ -1,4 +1,4 @@
-<section id="order-form-section" class="py-20 sm:py-28 bg-[#1c1410] text-stone-200 border-t border-[#2e221c]">
+<section id="order-form-section" class="pt-36 pb-8 sm:pt-52 sm:pb-8 bg-[#211814] text-stone-200">
     <div class="container mx-auto px-4 max-w-2xl">
         <div class="text-center mb-12 space-y-2">
             <span class="text-xl! sm:text-sm font-bold tracking-widest text-[#df974f] uppercase block">Оформление</span>

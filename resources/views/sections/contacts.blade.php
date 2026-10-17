@@ -1,4 +1,4 @@
-<section id="contacts" class="py-20 sm:py-28 bg-[#120d0a] text-stone-200 border-t border-[#1c1410]">
+<section id="contacts" class="pt-36 pb-8 sm:pt-52 sm:pb-8 bg-[#120d0a] text-stone-200">
     <div class="container mx-auto px-4 max-w-5xl">
 
         <!-- Заголовок блока -->

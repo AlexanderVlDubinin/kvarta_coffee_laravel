@@ -1,4 +1,4 @@
-<section id="catalog" class="py-20 sm:py-28 bg-[#120d0a] text-stone-200 border-t border-[#1c1410]">
+<section id="catalog" class="pt-36 pb-8 sm:pt-52 sm:pb-8 bg-[#120d0a] text-stone-200">
     <div class="container mx-auto px-4 max-w-5xl">
         <div class="text-center max-w-2xl mx-auto mb-16 space-y-2">
             <span class="text-xl! sm:text-sm font-bold tracking-widest text-[#df974f] uppercase">Свежий обжар</span>
