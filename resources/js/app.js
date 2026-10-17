@@ -318,6 +318,9 @@ document.getElementById('order-form').addEventListener('submit', function(e) {
                 msgBlock.classList.remove('hidden');
                 submitBtn.disabled = false;
                 submitBtn.innerText = 'Отправить заявку';
+
+                // скролл к сообщению
+                msgBlock.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             }
         })
         .catch(error => {
