@@ -23,7 +23,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Model::unguard(); // disables Mass Assignment protection for all models
         Model::shouldBeStrict(); // enables strict mode for all models
 
         // Setting up the limiter for the application form
