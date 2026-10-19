@@ -9,6 +9,16 @@
 
 ---
 
+## 📊 Результаты тестирования Lighthouse (Мобильная версия)
+Стабильный результат после прогрева кэша приложения
+
+* **Performance:** 99-100
+* **Accessibility:** 100
+* **Best Practices:** 100
+* **SEO:** 100
+
+---
+
 ### 🛠️ Архитектура и Стек
 
 * **Backend:** PHP 8.4 / Laravel 13. Базовый каркас расширен строгим правилом `Model::shouldBeStrict()` в `AppServiceProvider`.
