@@ -6,6 +6,7 @@ use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -34,5 +35,10 @@ class AppServiceProvider extends ServiceProvider
                 ], 429, $headers); // Code 429 Too Many Requests
             });
         });
+
+        // Если приложение запущено на продакшене (на Render), принудительно включаем HTTPS
+        if (config('app.env') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
