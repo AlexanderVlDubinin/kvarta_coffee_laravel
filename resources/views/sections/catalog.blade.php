@@ -17,6 +17,7 @@
                     <div class="relative aspect-square rounded-2xl overflow-hidden bg-[#120d0a] border border-[#3d2c24]/20 flex items-center justify-center p-4">
                         <img src="{{ asset('images/ethiopian_yirgacheffe_coffee_pouch.jpg') }}"
                              alt="Кофе Эфиопия Иргачеффе"
+                             width="200" height="300"
                              class="max-h-full object-contain select-none pointer-events-none">
                     </div>
 
@@ -72,6 +73,7 @@
                     <div class="relative aspect-square rounded-2xl overflow-hidden bg-[#120d0a] border border-[#3d2c24]/20 flex items-center justify-center p-4">
                         <img src="{{ asset('images/colombia_huila_coffee_pouch.jpg') }}"
                              alt="Кофе Колумбия Уила"
+                             width="200" height="300"
                              class="max-h-full object-contain select-none pointer-events-none">
                     </div>
 
@@ -127,6 +129,7 @@
                     <div class="relative aspect-square rounded-2xl overflow-hidden bg-[#120d0a] border border-[#3d2c24]/20 flex items-center justify-center p-4">
                         <img src="{{ asset('images/brazil_cerrado_coffee_pouch.jpg') }}"
                              alt="Кофе Бразилия Серрадо"
+                             width="200" height="300"
                              class="max-h-full object-contain select-none pointer-events-none">
                     </div>
 
@@ -183,6 +186,7 @@
                 <div class="w-full md:w-1/3 aspect-4/3 md:aspect-square rounded-2xl overflow-hidden bg-[#120d0a] border border-[#3d2c24]/20 flex items-center justify-center p-6 shrink-0">
                     <img src="{{ asset('images/coffee_drip_bag_collection.jpg') }}"
                          alt="Коробка дрип-пакетов ассорти"
+                         width="300" height="300"
                          class="max-h-full object-contain select-none pointer-events-none">
                 </div>
 

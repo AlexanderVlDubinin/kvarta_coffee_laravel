@@ -21,7 +21,7 @@
                             ✓
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold font-display text-sm sm:text-base">2 пачки по 250 г каждый месяц</h4>
+                            <h3 class="text-white font-semibold font-display text-sm sm:text-base">2 пачки по 250 г каждый месяц</h3>
                             <p class="text-xs sm:text-sm text-stone-400 font-light mt-0.5">Выбирайте любимые сорта или доверьте выбор нашим рекомендациям.</p>
                         </div>
                     </div>
@@ -31,7 +31,7 @@
                             ✓
                         </div>
                         <div>
-                            <h4 class="text-emerald-400 font-semibold font-display text-sm sm:text-base">Всегда бесплатная доставка</h4>
+                            <h3 class="text-emerald-400 font-semibold font-display text-sm sm:text-base">Всегда бесплатная доставка</h3>
                             <p class="text-xs sm:text-sm text-stone-400 font-light mt-0.5">Привезем курьером прямо до вашей двери по всему Минску.</p>
                         </div>
                     </div>
@@ -41,7 +41,7 @@
                             ✓
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold font-display text-sm sm:text-base">Максимальная свежесть</h4>
+                            <h3 class="text-white font-semibold font-display text-sm sm:text-base">Максимальная свежесть</h3>
                             <p class="text-xs sm:text-sm text-stone-400 font-light mt-0.5">Доставляем строго в первую пятницу после обжарки.</p>
                         </div>
                     </div>
@@ -75,7 +75,7 @@
                         Оформить подписку
                     </button>
 
-                    <p class="text-[11px] text-stone-500 font-light mt-3">
+                    <p class="text-[11px] text-stone-300 font-light mt-3">
                         Оплата происходит после подтверждения деталей менеджером
                     </p>
                 </div>

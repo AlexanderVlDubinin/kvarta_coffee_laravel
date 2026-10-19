@@ -48,8 +48,8 @@
     <footer class="bg-[#0b0806] border-t border-[#1c1410] py-8 text-stone-500 text-xs sm:text-sm">
         <div class="container mx-auto px-4 max-w-4xl flex flex-col sm:flex-row items-center justify-between gap-4">
             <div class="text-center sm:text-left">
-                <p class="font-medium text-stone-400">© {{ date('Y') }} КВАРТА • Мастерская кофе</p>
-                <p class="mt-1 text-stone-500">Минск, ул. Короля, 9 (самовывоз)</p>
+                <p class="font-medium text-stone-300">© {{ date('Y') }} КВАРТА • Мастерская кофе</p>
+                <p class="mt-1 text-stone-400">Минск, ул. Короля, 9 (самовывоз)</p>
             </div>
 
             <div class="text-center font-medium text-stone-300">
@@ -61,7 +61,7 @@
 
             <div class="text-center sm:text-right">
                 <p class="text-stone-400">Будни: 8:00–20:00 | Выходные: 10:00–18:00</p>
-                <p class="mt-1 text-[#df974f]/70 italic">Свежесть — главное, что мы продаем.</p>
+                <p class="mt-1 text-[#df974f] italic">Свежесть — главное, что мы продаем.</p>
             </div>
 
         </div>

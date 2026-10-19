@@ -27,7 +27,7 @@
                 <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-stone-400">Телефон</label>
                 <input type="tel" id="phone" name="phone" required placeholder="+375(XX)XXX-XX-XX"
                        class="w-full px-4 py-3 bg-[#120d0a] border border-[#3d2c24] rounded-xl text-stone-100 placeholder-stone-600 focus:outline-none focus:border-[#df974f] focus:ring-1 focus:ring-[#df974f] transition-all text-sm">
-                <p class="text-[11px] text-stone-500 font-light">Пожалуйста, введите корректный белорусский номер телефона в формате +375(XX)XXX-XX-XX.</p>
+                <p class="text-[11px] text-stone-300 font-light">Пожалуйста, введите корректный белорусский номер телефона в формате +375(XX)XXX-XX-XX.</p>
                 <div id="error-phone" class="text-xs text-red-400 hidden pt-1"></div>
             </div>
 
