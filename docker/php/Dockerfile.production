@@ -4,7 +4,7 @@ FROM php:8.4-fpm-alpine
 RUN apk add --no-cache \
     bash curl oniguruma-dev libzip-dev libxml2-dev git unzip zip \
     freetype-dev libpng-dev libjpeg-turbo-dev icu-dev libpq-dev \
-    nginx supervisor nodejs npm
+    nginx nodejs npm
 
 # Установка расширений
 COPY --from=mlocati/php-extension-installer /usr/bin/install-php-extensions /usr/local/bin/
@@ -19,9 +19,6 @@ WORKDIR /var/www
 # Копирование всех файлов проекта в контейнер
 COPY . .
 
-# Переключение на root, чтобы установить глобальные конфиги и зависимости
-USER root
-
 # Установка зависимостей бэкенда и сборка фронтенд (Vite) для продакшена
 RUN composer install --no-dev --optimize-autoloader
 RUN npm install && npm run build
@@ -31,13 +28,18 @@ COPY ./docker/nginx/production.conf /etc/nginx/http.d/default.conf
 
 # Скрипт автоматического запуска миграций и серверов
 RUN echo '#!/bin/sh' > /usr/local/bin/start.sh && \
+    echo 'php artisan config:clear' >> /usr/local/bin/start.sh && \
     echo 'php artisan migrate --force' >> /usr/local/bin/start.sh && \
     echo 'php-fpm -D' >> /usr/local/bin/start.sh && \
     echo 'nginx -g "daemon off;"' >> /usr/local/bin/start.sh && \
     chmod +x /usr/local/bin/start.sh
 
 # Права для Laravel (чтобы у веб-сервера был доступ к кэшу и логам)
-RUN chown -R www-data:www-data /var/www/storage /var/www/bootstrap/cache
+RUN chown -R www-data:www-data /var/www
+
+# Для правильной работы Nginx на 80 порту в Alpine контейнер должен стартовать от root, 
+# а процессы внутри уже сами переключатся на www-data.
+USER root
 
 # Render слушает порт 80 или 10000 по умолчанию
 EXPOSE 80
